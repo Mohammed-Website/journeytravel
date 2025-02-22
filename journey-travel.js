@@ -410,6 +410,12 @@ window.addEventListener('scroll', () => {
 // create all offers content functionality
 const sectionData = [
     {
+        title: 'أحدث العروض',
+        image_1: ['عروض-شركة-جيرني/احدث-العروض/1.jpg', 'تبليسي & باكورياني & سايرمي & باتومي'],
+        image_2: ['عروض-شركة-جيرني/احدث-العروض/2.jpg', 'عرض موسكو | 8 أيام'],
+    },
+
+    {
         title: 'عروض تايلاند',
         image_1: ['عروض-شركة-جيرني/عروض-تايلاند/1.jpg', 'تايلاند & ماليزيا | 13 يوم'],
         image_2: ['عروض-شركة-جيرني/عروض-تايلاند/2.jpg', 'بوكيت & كرابي & بانكوك'],
@@ -517,7 +523,7 @@ function openFullScreenImage(src, text) {
     const whatsappButton = document.createElement('a');
     whatsappButton.className = 'whatsapp_button';
     whatsappButton.innerText = 'إرسال هذا العرض';
-    whatsappButton.href = `https://wa.me/+97335101309?text=طلب%20حجز%20هذا%20العرض:%0A%0Ahttps://mohammed-website.github.io/journeytravel/${encodeURIComponent(src)}`;
+    whatsappButton.href = `https://wa.me/+97332111060?text=طلب%20حجز%20هذا%20العرض:%0A%0Ahttps://mohammed-website.github.io/journeytravel/${encodeURIComponent(src)}`;
     fullScreenDiv.appendChild(whatsappButton);
 
     // Close on background click
@@ -724,7 +730,7 @@ openWhatsAppNumber = function () {
 
     insertNewClick('alseef.com');
 
-    const whatsappNumber = "+97335101309";
+    const whatsappNumber = "+97332111060";
     const message = encodeURIComponent('سلام عليكم ورحمة الله وبركاته'); // Optional pre-filled message
     const url = `https://wa.me/${whatsappNumber}?text=${message}`;
     window.open(url, "_blank"); // Opens in a new tab
